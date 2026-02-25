@@ -58,7 +58,6 @@ function App() {
         <History
           className="History"
           history={history}
-          key={history.id}
           setUserdata={setUserData}
         />
 
