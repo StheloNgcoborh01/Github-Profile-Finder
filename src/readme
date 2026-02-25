@@ -1,0 +1,71 @@
+import React, { useState, useEffect } from "react";
+
+export default function DemoPersistence() {
+  // 🔥 1. LOAD from localStorage on first render
+  const [name, setName] = useState(() => {
+    const saved = localStorage.getItem("demo-name");
+    return saved ? JSON.parse(saved) : "";
+  });
+
+  // 🔥 2. SAVE to localStorage whenever state changes
+  useEffect(() => {
+    localStorage.setItem("demo-name", JSON.stringify(name));
+  }, [name]);
+
+  return (
+    <div style={{ padding: 20 }}>
+      <input
+        placeholder="Type your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+
+      <p>Saved name: {name || "Nothing yet"}</p>
+    </div>
+  );
+}
+
+const [history, setHistory] = useState(() => {
+  return JSON.parse(localStorage.getItem("gh-history")) || [];
+});
+
+const [userData, setUserData] = useState(() => {
+  return JSON.parse(localStorage.getItem("gh-user")) || null;
+});
+
+useEffect(() => {
+  localStorage.setItem("gh-history", JSON.stringify(history));
+}, [history]);
+
+useEffect(() => {
+  localStorage.setItem("gh-user", JSON.stringify(userData));
+}, [userData]);
+
+
+
+import React, { useState, useEffect } from "react";
+
+export default function DemoPersistence() {
+  // 🔥 1. LOAD from localStorage on first render
+  const [name, setName] = useState(() => {
+    const saved = localStorage.getItem("demo-name");
+    return saved ? JSON.parse(saved) : "";
+  });
+
+  // 🔥 2. SAVE to localStorage whenever state changes
+  useEffect(() => {
+    localStorage.setItem("demo-name", JSON.stringify(name));
+  }, [name]);
+
+  return (
+    <div style={{ padding: 20 }}>
+      <input
+        placeholder="Type your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+
+      <p>Saved name: {name || "Nothing yet"}</p>
+    </div>
+  );
+}

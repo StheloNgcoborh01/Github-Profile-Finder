@@ -1,0 +1,58 @@
+.history-panel {
+  width: 75%;
+  max-width: 280px;
+  background: #111827;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.history-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.history-item:hover {
+  background: #1f2937;
+}
+
+.history-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-username {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.history-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+
