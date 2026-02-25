@@ -16,7 +16,7 @@ A **React web application** to search GitHub profiles, view detailed user inform
 
 ## 📸 Screenshot
 
-![GitHub Profile Finder Screenshot](GitHub REST APIGithub-Profile-Finder/src/Screenshot.png)
+![GitHub Profile Finder Screenshot](./src/Screenshot.png)
 
 ---
 
@@ -33,7 +33,7 @@ A **React web application** to search GitHub profiles, view detailed user inform
 
 ## 🚀 Live Demo
 
-Check it out here: [GitHub Profile Finder Live]([https://your-live-link.com](https://github-profile-finder-ycx2.onrender.com))
+Check it out here: [GitHub Profile Finder Live](https://github-profile-finder-ycx2.onrender.com)
 
 ---
 
